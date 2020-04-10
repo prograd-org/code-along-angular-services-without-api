@@ -1,0 +1,101 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.register-form {
+
+
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+
+
+}
+
+/* Reset top and bottom margins from certain elements */
+.register-form-header,
+.register-form p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.register-form-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color:orangered;
+}
+
+.register-form-header {
+  background:orangered;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.register-form-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .register-form-container is defined with p tags */
+.register-form p {
+  padding: 12px;
+}
+
+.register-form input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus {
+  border-color: #888;
+}
+
+.register-form button[type="submit"] {
+  background: orangered;
+  border-color: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  width:25%;
+  height: 55px;
+  margin-left: 40%;
+  margin-top: 10px;
+  border-radius: 2em;
+  font-size: 18px;
+}
+
+.register-form button[type="submit"]:hover {
+  background: orangered;
+}
+
+/* Buttons' focus effect */
+.register-form button[type="submit"]:focus {
+  border-color:orangered;
+}
